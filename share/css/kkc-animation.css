@@ -1,0 +1,250 @@
+@charset "UTF-8";
+/*======================
+カラー設定
+========================*/
+/*======================
+フォントサイズ設定
+========================*/
+/*======================
+ブレイクポイント（ベース）
+========================*/
+/*======================
+フォント設定
+========================*/
+.js-enable .kkc-anime {
+  /*------------------------------
+
+      loadイベント処理
+
+    ------------------------------*/
+  /*------------------------------
+
+      スクロールイベント処理
+
+    ------------------------------*/
+  /*------------------------------
+
+      triggerイベント処理
+
+    ------------------------------*/
+}
+
+.js-enable .kkc-anime_load {
+  /*--------------------
+        共通ブロック
+      --------------------*/
+  /*--------------------
+        下層メインビジュアルブロック
+      --------------------*/
+}
+
+.js-enable .kkc-anime_load_common {
+  /* fadeIn */
+}
+
+.js-enable .kkc-anime_load_common_fade-in {
+  animation: fadeIn 1.5s ease-in-out 0s both;
+}
+
+.js-enable .kkc-anime_load_common_fade-in-left {
+  animation: fadeInLeft 1.5s ease-in-out 0s both;
+}
+
+.js-enable .kkc-anime_load_common_fade-in-right {
+  animation: fadeInRight 1.5s ease-in-out 0s both;
+}
+
+.js-enable .kkc-anime_load_common_fade-in-top {
+  animation: fadeInTop 1.5s ease-in-out 0s both;
+}
+
+.js-enable .kkc-anime_load_common_fade-in-bottom {
+  animation: fadeInBottom 1.5s ease-in-out 0s both;
+}
+
+.js-enable .kkc-anime_load_other-mainvisual .hdg-lv1-01 {
+  animation: fadeIn .8s ease-in-out 0s both;
+}
+
+.js-enable .kkc-anime_load_other-mainvisual::before {
+  animation: fadeIn .6s ease-in-out .6s both;
+}
+
+.js-enable .kkc-anime_scroll {
+  /*--------------------
+        共通ブロック
+      --------------------*/
+  /*--------------------
+        history Chronology セクションブロック
+      --------------------*/
+  /*--------------------
+        history Chronology セクションブロック
+      --------------------*/
+}
+
+.js-enable .kkc-anime_scroll_common {
+  /* 共通 */
+  /* fadeIn */
+}
+
+.js-enable .kkc-anime_scroll_common_fade-in,
+.js-enable .kkc-anime_scroll_common_fade-in-left,
+.js-enable .kkc-anime_scroll_common_fade-in-right,
+.js-enable .kkc-anime_scroll_common_fade-in-top,
+.js-enable .kkc-anime_scroll_common_fade-in-bottom {
+  opacity: 0;
+}
+
+.js-enable .kkc-anime_scroll_common_fade-in.kkc-anime_state_show {
+  animation: fadeIn 1s ease-in-out 0s both;
+}
+
+.js-enable .kkc-anime_scroll_common_fade-in-left.kkc-anime_state_show {
+  animation: fadeInLeft 1s ease-in-out 0s both;
+}
+
+.js-enable .kkc-anime_scroll_common_fade-in-right.kkc-anime_state_show {
+  animation: fadeInRight 1s ease-in-out 0s both;
+}
+
+.js-enable .kkc-anime_scroll_common_fade-in-top.kkc-anime_state_show {
+  animation: fadeInTop 1s ease-in-out 0s both;
+}
+
+.js-enable .kkc-anime_scroll_common_fade-in-bottom.kkc-anime_state_show {
+  animation: fadeInBottom 1s ease-in-out 0s both;
+}
+
+.js-enable .kkc-anime_trigger {
+  /*--------------------
+        TOP Core values セクションブロック
+      --------------------*/
+  /*--------------------
+        history Chronology セクションブロック
+      --------------------*/
+  /*--------------------
+        what we do Areas of focus セクションブロック
+      --------------------*/
+}
+
+.js-enable .kkc-anime_trigger_top-beans_child-1,
+.js-enable .kkc-anime_trigger_top-beans_child-2,
+.js-enable .kkc-anime_trigger_top-beans_child-3 {
+  opacity: 0;
+}
+
+.js-enable .kkc-anime_trigger_chronology_child {
+  opacity: 0;
+}
+
+.js-enable .kkc-anime_trigger_chronology_child.kkc-anime_state_ignition {
+  animation: fadeIn .6s ease-in-out 0s both;
+}
+
+.js-enable .kkc-anime_trigger_areas-of-focus_child-1,
+.js-enable .kkc-anime_trigger_areas-of-focus_child-2,
+.js-enable .kkc-anime_trigger_areas-of-focus_child-3,
+.js-enable .kkc-anime_trigger_areas-of-focus_child-4 {
+  opacity: 0;
+}
+
+.js-enable .kkc-anime_trigger_areas-of-focus_child-1.kkc-anime_state_ignition {
+  animation: fadeIn 1s ease-in-out 0s both;
+}
+
+.js-enable .kkc-anime_trigger_areas-of-focus_child-2.kkc-anime_state_ignition {
+  animation: fadeIn 1s ease-in-out .3s both;
+}
+
+.js-enable .kkc-anime_trigger_areas-of-focus_child-3.kkc-anime_state_ignition {
+  animation: fadeIn 1s ease-in-out .1s both;
+}
+
+.js-enable .kkc-anime_trigger_areas-of-focus_child-4.kkc-anime_state_ignition {
+  animation: fadeIn 1s ease-in-out .2s both;
+}
+
+.js-enable .kkc-anime_trigger_focus-icon_item {
+  opacity: 0;
+}
+
+.js-enable .kkc-anime_trigger_focus-icon_item.kkc-anime_state_ignition {
+  animation: fadeIn .6s ease-in-out 0s both;
+}
+
+/**
+ * fadeIn
+ */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTop {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInBottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .js-enable .kkc-anime_trigger_top-beans_child-1.kkc-anime_state_ignition {
+    animation: fadeIn 1s ease-in-out .3s both;
+  }
+  .js-enable .kkc-anime_trigger_top-beans_child-2.kkc-anime_state_ignition {
+    animation: fadeIn 1s ease-in-out 0s both;
+  }
+  .js-enable .kkc-anime_trigger_top-beans_child-3.kkc-anime_state_ignition {
+    animation: fadeIn 1s ease-in-out .6s both;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .js-enable .kkc-anime_scroll_top-beans_fade-in.kkc-anime_state_show {
+    animation: fadeIn .6s ease-in-out 0s both;
+  }
+  .js-enable .kkc-anime_scroll_chronology_fade-in.kkc-anime_state_show {
+    animation: fadeIn .6s ease-in-out 0s both;
+  }
+}

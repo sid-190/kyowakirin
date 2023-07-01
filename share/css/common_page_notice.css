@@ -1,0 +1,270 @@
+@charset "UTF-8";
+/*======================
+カラー設定
+========================*/
+/*======================
+フォントサイズ設定
+========================*/
+/*======================
+ブレイクポイント（ベース）
+========================*/
+/*======================
+フォント設定
+========================*/
+/* ============================================================================
+* Font Face
+* ========================================================================= */
+@import url("https://fonts.googleapis.com/css?family=Hind+Madurai&amp;display=swap");
+/* ============================================================================
+* デフォルトスタイル
+* ========================================================================= */
+*,
+*::before,
+*::after {
+  word-wrap: break-word;
+  word-break: keep-all;
+  box-sizing: border-box;
+
+  -webkit-backface-visibility: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body,
+input[type],
+textarea,
+select,
+button {
+  font-family: "Hind Madurai", Arial, sans-serif;
+  font-size: calc(2.6rem/2);
+  line-height: 1.5;
+  color: #5d6164;
+}
+
+body.is-fixed {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+label,
+[type="button"] {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+div,
+form,
+sup,
+p,
+th,
+td,
+button,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+h5,
+h6,
+th,
+td {
+  font-size: 1em;
+  font-style: normal;
+  line-height: inherit;
+  text-align: inherit;
+}
+
+iframe {
+  border: none;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+th {
+  font-weight: normal;
+  text-align: left;
+  vertical-align: top;
+}
+
+td {
+  vertical-align: top;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+hr {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #1ba8d6;
+}
+
+.notice .box-hdg-wrapper {
+  background-color: #fef3ed;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: auto;
+  min-height: 250px;
+}
+
+.notice .box-hdg-wrapper .hdg-lv1-01 {
+  color: #ea5504;
+}
+
+.notice .box-hdg-wrapper .inner {
+  position: relative;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.notice .box-hdg-wrapper .inner .box-breadcrumb {
+  display: none;
+}
+
+.notice .main-content {
+  margin-top: 100px;
+}
+
+.notice .main-content .box:not(:first-child) {
+  margin-top: 20px;
+}
+
+.notice .main-content .box dt {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ea5504;
+}
+
+.notice .main-content .box a {
+  font-size: 1.4rem;
+  color: #5d6164;
+  position: relative;
+  padding-left: 20px;
+}
+
+.notice .main-content .box a::before {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  display: inline-block;
+  width: 11px;
+  content: "";
+  transition: transform .5s;
+  border-bottom: 1px solid #ea5504;
+}
+
+.notice .main-content .box a::after {
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  content: "";
+  transition: transform .5s;
+  transform: rotate(45deg);
+  border-top: 1px solid #ea5504;
+  border-right: 1px solid #ea5504;
+}
+
+@media screen and (min-width: 769px) {
+  body,
+  input[type],
+  textarea,
+  select,
+  button {
+    font-size: 1.6rem;
+  }
+  .notice .box-hdg-wrapper {
+    background-image: url("../images/index_img_main_pc.png");
+  }
+  .notice .box-hdg-wrapper .inner .box-breadcrumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  .notice .main-content .box dt {
+    font-size: 1.8rem;
+  }
+  .notice .main-content .box a {
+    font-size: 1.6rem;
+  }
+  .notice .main-content .box a::before {
+    top: 10px;
+    width: 12px;
+  }
+  .notice .main-content .box a::after {
+    top: 7px;
+    width: 7px;
+    height: 7px;
+  }
+  .notice .main-content .box a:hover {
+    text-decoration: underline;
+  }
+  .notice .main-content .box a:hover::before {
+    transform: translateX(3px);
+  }
+  .notice .main-content .box a:hover::after {
+    transform: translateX(3px) rotate(45deg);
+  }
+}

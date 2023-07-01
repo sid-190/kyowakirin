@@ -1,0 +1,253 @@
+@charset "UTF-8";
+/*======================
+カラー設定
+========================*/
+/*======================
+フォントサイズ設定
+========================*/
+/*======================
+ブレイクポイント（ベース）
+========================*/
+/*======================
+フォント設定
+========================*/
+body.is-fixed {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.box-modal-outbound {
+  display: none;
+  box-sizing: border-box;
+}
+
+.box-modal-outbound.is-visible {
+  position: fixed;
+  z-index: 10001;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  overflow-y: auto;
+  margin: auto;
+  padding: 0 20px;
+  transition: opacity .5s;
+  opacity: 0;
+}
+
+.box-modal-outbound.is-animation {
+  opacity: 1;
+}
+
+.box-modal-outbound .box-modal-inner {
+  color: #fff;
+  background-color: #ea5504;
+  position: relative;
+  overflow-y: auto;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 60px 25px;
+}
+
+.box-modal-outbound .box-modal-inner :nth-child(1) {
+  margin-top: 0;
+}
+
+.box-modal-outbound .box-modal-inner .btn-modal-close {
+  background-color: #ee7736;
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  overflow: hidden;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.box-modal-outbound .box-modal-inner .btn-modal-close > span {
+  display: block;
+  overflow: hidden;
+  height: 0;
+}
+
+.box-modal-outbound .box-modal-inner .btn-modal-close::before,
+.box-modal-outbound .box-modal-inner .btn-modal-close::after {
+  background-color: #fff;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: calc(50% - 9px);
+  width: 18px;
+  height: 2px;
+  content: "";
+  transform-origin: center;
+}
+
+.box-modal-outbound .box-modal-inner .btn-modal-close::before {
+  transform: rotate(45deg);
+}
+
+.box-modal-outbound .box-modal-inner .btn-modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.box-modal-outbound .box-modal-inner .btn-03:hover,
+.box-modal-outbound .box-modal-inner .btn-03:focus,
+.box-modal-outbound .box-modal-inner .btn-03:active {
+  background: #ee7736;
+}
+
+.box-modal-outbound * {
+  box-sizing: border-box;
+}
+
+.box-modal-outbound button {
+  text-align: left;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.box-modal-outbound p {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+.box-modal-outbound a {
+  text-decoration: none;
+  color: #1ba8d6;
+}
+
+.box-modal-outbound a img.icon-blank {
+  vertical-align: baseline;
+  position: relative;
+  top: .3125em;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-left: 5px;
+}
+
+.box-modal-outbound .align-c {
+  text-align: center;
+}
+
+.box-modal-outbound .btn-03 {
+  font-size: calc(3.2rem/2);
+  font-weight: bold;
+  vertical-align: middle;
+  color: #ea5504;
+  background-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 415px;
+  padding: calc(35px/2);
+  transition: background-color .4s;
+  border-radius: 30px;
+}
+
+.box-modal-outbound .btn-03:hover,
+.box-modal-outbound .btn-03:focus,
+.box-modal-outbound .btn-03:active {
+  color: #fff;
+  background-color: #ea5504;
+}
+
+.box-modal-outbound .btn-03:hover > span::after,
+.box-modal-outbound .btn-03:focus > span::after,
+.box-modal-outbound .btn-03:active > span::after {
+  background-image: url("../images/icon_arrow_right_01.png");
+  transform: translateX(5px);
+}
+
+.box-modal-outbound .btn-03 > img[class^="icon-"] {
+  position: static;
+}
+
+.box-modal-outbound .btn-03 > span {
+  position: relative;
+  display: inline-block;
+}
+
+.box-modal-outbound .btn-03 > span::after {
+  background-image: url("../images/icon_arrow_right_02.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+  display: inline-block;
+  width: 26px;
+  height: 16px;
+  margin-left: 5px;
+  content: "";
+  transition: transform .4s;
+}
+
+.box-modal-outbound .btn-03.btn-small {
+  font-size: 1.6rem;
+  max-width: 230px;
+  padding: 5px 10px;
+}
+
+.box-modal-outbound .btn-03.btn-small > span::after {
+  display: none;
+}
+
+.box-modal-outbound .box-text {
+  margin-bottom: calc(48.75px/2);
+}
+
+.box-modal-overlay {
+  background-color: rgba(255, 255, 255, .5);
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  opacity: 0;
+}
+
+.box-modal-overlay.is-visible {
+  opacity: 1;
+}
+
+.box-modal-overlay.is-hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .box-modal-outbound .box-modal-inner {
+    max-height: 700px;
+    padding: 70px 50px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .box-modal-outbound .btn-03 {
+    font-size: 1.7rem;
+    padding: 19.75px 10px 17.75px;
+  }
+  .box-modal-outbound .btn-03.btn-small {
+    font-size: 1.6rem;
+    padding: 5px 10px;
+  }
+  .box-modal-outbound .box-text {
+    margin-bottom: 29px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .box-modal-outbound a img.icon-blank {
+    width: 18px;
+    height: 18px;
+  }
+}
